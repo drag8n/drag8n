@@ -46,7 +46,15 @@ body{
   text-decoration: none;
 }
 .menu__hamburguer{
-  /* background-color: #2F2F2F; */
   height: 40px;
-  /* margin-right: 8px; */
+  display: none;
+}
+
+@media (max-width:640px){
+  .menu__hamburguer{
+    display: block;
+  }
+  .navbar__unlist{
+    display: none;
+  }
 }
