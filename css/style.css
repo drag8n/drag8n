@@ -14,21 +14,29 @@
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box; /*! Poner este elemento para que no se desborde de la pantalla hacia ningun lado*/
 }
 body{
   background-color: var(--platinum);
   font-size: var(--sm);
   font-family: 'Poppins', sans-serif;
+  /* padding: 8px; */
+}
+.background__introduction{
+  position: fixed;
+  width: 100vw;
+  height: 68px;
+  background-color: var(--platinum);
   padding: 8px;
 }
 .nav-container{
-  background-color: var(--brunswick-green);
   display: flex;
+  background-color: var(--brunswick-green);
   flex-direction: row;
-  /* margin: 8px; */
   border-radius: 4px;
   height: 60px;
   justify-content: space-between;
+
 }
 .logo{
   height: auto;
@@ -55,12 +63,13 @@ body{
   border-color: #2F2F2F;
 }
 .introduction{
+  /* margin-top: 80px; */
   padding: 32px;
+  padding-top: 120px;
   font-size: var(--lg);
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-sizing: border-box;
 }
 .introduction__title{
   display: flex;
@@ -79,6 +88,24 @@ body{
 .introduction__paragraph-movil{
   display: none;
 }
+/* *!Es una prueba para hacer que la barra nav se mueva con el scroll */
+.parrafo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.parrafo p{
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  font-size: var(--sm);
+  text-align: justify;
+  max-width: 900px;
+  padding: 32px;
+  color: var(--jet);
+}
+/* *! Hasta aquí es la prueba*/
+
 
 @media (max-width:640px){
   .menu__hamburguer{
