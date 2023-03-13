@@ -22,6 +22,12 @@ body{
   font-family: 'Poppins', sans-serif;
   /* padding: 8px; */
 }
+section{
+  font-size: var(--lg);
+  display: flex;
+  justify-content: center;
+  color: var(--jet);
+}
 .background__introduction{
   position: fixed;
   width: 100vw;
@@ -66,16 +72,16 @@ body{
   /* margin-top: 80px; */
   padding: 32px;
   padding-top: 120px;
-  font-size: var(--lg);
+  /* font-size: var(--lg); */
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.introduction__title{
+/* .introduction__title{
   display: flex;
   justify-content: center;
   color: var(--jet);
-}
+} */
 .introduction__paragraph{
   display: flex;
   justify-content: center;
@@ -88,9 +94,16 @@ body{
 .introduction__paragraph-movil{
   display: none;
 }
-/* *!Es una prueba para hacer que la barra nav se mueva con el scroll */
-.parrafo{
+
+.projects{
+  padding: 0px 32px 32px;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.parrafo{
+  display: none;
+  /* display: flex; */
   flex-direction: column;
   align-items: center;
 }
@@ -101,10 +114,10 @@ body{
   font-size: var(--sm);
   text-align: justify;
   max-width: 900px;
-  padding: 32px;
+  padding: 0px 32px;
   color: var(--jet);
 }
-/* *! Hasta aquí es la prueba*/
+
 
 
 @media (max-width:640px){
