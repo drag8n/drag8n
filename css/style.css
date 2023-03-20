@@ -28,6 +28,8 @@ section{
   justify-content: center;
   color: var(--jet);
 }
+img .logo{
+}
 .background__introduction{
   position: fixed;
   width: 100vw;
@@ -42,11 +44,14 @@ section{
   border-radius: 4px;
   height: 60px;
   justify-content: space-between;
-
+  
 }
 .logo{
+  margin: 6px;
+  background-color: var(--silver);
+  border-radius: 12%;
   height: auto;
-  padding: 8px;
+  padding: 4px;
 }
 .navbar{
   display: flex;
@@ -56,12 +61,26 @@ section{
   margin-right: 16px;
 }
 .navbar__unlist{
+  display: flex;
   list-style: none;
   margin-right: 16px;
 }
-.item__a{
+.items{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--jet);
+  width: 120px;
+  height: 32px;
+  border-radius: 4px;
+  margin-right: 16px;
+  padding: 4px 8px;
   text-decoration: none;
   color: var(--platinum);
+}
+.item__contactame{
+background-color: var(--pigment-green);
+margin-right: 0px;
 }
 .menu__hamburguer{
   height: 40px;
@@ -96,11 +115,13 @@ section{
 }
 
 .projects{
-  padding: 0px 32px 32px;
+  background-color: var(--silver);
+  padding: 32px 32px 32px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .parrafo{
   display: none;
   /* display: flex; */
