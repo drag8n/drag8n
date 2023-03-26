@@ -24,9 +24,13 @@ body{
 }
 section{
   font-size: var(--lg);
+  /* display: flex; */
+  /* justify-content: center; */
+  color: var(--jet);
+}
+h1{
   display: flex;
   justify-content: center;
-  color: var(--jet);
 }
 img .logo{
 }
@@ -114,12 +118,34 @@ margin-right: 0px;
   display: none;
 }
 
-.projects{
+.proj{
   background-color: var(--silver);
   padding: 32px 32px 32px;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; */
+}
+/* .title__projects{
+  display: flex;
+  justify-content: center;
+} */
+
+.projects__img{
+  display: grid;
+  margin-top: 32px;
+  box-sizing: border-box;
+  grid-gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  justify-items: center;
+}
+.card{
+  background-color: var(--jet);
+  /* opacity: 80%; */
+  width: 240px;
+  height: 300px;
+  border-radius: 4px;
+  margin: 16px;
+  padding: 4px 8px;
 }
 
 .parrafo{
