@@ -121,9 +121,8 @@ margin-right: 0px;
 .proj{
   background-color: var(--silver);
   padding: 32px 32px 32px;
-  /* display: flex;
-  flex-direction: column;
-  align-items: center; */
+  /* display: grid;
+  justify-items: center; */
 }
 /* .title__projects{
   display: flex;
@@ -131,14 +130,17 @@ margin-right: 0px;
 } */
 
 .projects__img{
+  max-width: 900px;
   display: grid;
   margin-top: 32px;
   box-sizing: border-box;
   grid-gap: 24px;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  justify-items: center;
+  justify-content: center;
 }
 .card{
+  display: grid;
+  justify-items: center;
   background-color: var(--jet);
   /* opacity: 80%; */
   width: 240px;
