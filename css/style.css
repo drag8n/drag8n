@@ -135,7 +135,7 @@ margin-right: 0px;
 .projects__img{
   /* max-width: 900px; */
   display: grid;
-  justify-content: center;
+  justify-items: center;
   margin-top: 32px;
   box-sizing: border-box;
   grid-template-columns: repeat(3, 240px);
