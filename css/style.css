@@ -117,8 +117,21 @@ margin-right: 0px;
   padding: 32px;
   color: var(--jet);
 }
+.introduction__paragraph2{
+  display: flex;
+  justify-content: center;
+  font-size: var(--sm);
+  text-align: justify;
+  max-width: 900px;
+  padding: 0 32px 32px;
+  color: var(--jet);
+}
 .introduction__paragraph-movil{
   display: none;
+}
+.question__title{
+  text-align: center;
+  margin-top: 32px;
 }
 
 
@@ -152,26 +165,23 @@ margin-right: 0px;
 }
 
 
-/*---------------------------------- -------------------------- section*/
+/*---------------------------------- -------------------------- Skills section*/
 
-
-.parrafo{
-  display: none;
-  /* display: flex; */
+.skills{
+  padding: 32px;
+  display: flex;
   flex-direction: column;
   align-items: center;
 }
-.parrafo p{
+.skills__paragraph{
   display: flex;
-  /* align-items: center; */
   justify-content: center;
   font-size: var(--sm);
   text-align: justify;
   max-width: 900px;
-  padding: 0px 32px;
+  padding: 32px;
   color: var(--jet);
 }
-
 
 
 @media (max-width:640px){
@@ -183,8 +193,12 @@ margin-right: 0px;
   }
   .introduction__paragraph{
     display: none;
-    /* font-size: var(--sm); */
-    /* text-align: end; */
+  }
+  .introduction__paragraph2{
+    display: none;
+  }
+  .question__title{
+  display: none;
   }
   .introduction__paragraph-movil{
     margin: 32px 0px ;
