@@ -128,12 +128,9 @@ margin-right: 0px;
 .proj{
   background-color: var(--emerald);
   padding: 32px 32px 32px;
-  /* display: grid; */
-  /* justify-content: center; */
 }
 
 .projects__img{
-  /* max-width: 900px; */
   display: grid;
   justify-items: center;
   margin-top: 32px;
