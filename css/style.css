@@ -22,18 +22,17 @@ body{
   font-family: 'Poppins', sans-serif;
   /* padding: 8px; */
 }
+
 section{
   font-size: var(--lg);
-  /* display: flex; */
-  /* justify-content: center; */
   color: var(--jet);
 }
 h1{
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
+  text-align: center;
 }
-img .logo{
-}
+/*---------------------------------- -------------------------- Navbar section*/
 .background__introduction{
   position: fixed;
   width: 100vw;
@@ -48,7 +47,6 @@ img .logo{
   border-radius: 4px;
   height: 60px;
   justify-content: space-between;
-  
 }
 .logo{
   margin: 6px;
@@ -91,6 +89,7 @@ margin-right: 0px;
   display: none;
   border-color: #2F2F2F;
 }
+/*---------------------------------- -------------------------- Introduction section*/
 .introduction{
   /* margin-top: 80px; */
   padding: 32px;
@@ -117,30 +116,28 @@ margin-right: 0px;
 .introduction__paragraph-movil{
   display: none;
 }
-
+/*---------------------------------- -------------------------- Projects section*/
 .proj{
-  background-color: var(--silver);
+  background-color: var(--emerald);
   padding: 32px 32px 32px;
-  /* display: grid;
-  justify-items: center; */
+  /* display: grid; */
+  /* justify-content: center; */
 }
-/* .title__projects{
-  display: flex;
-  justify-content: center;
-} */
 
 .projects__img{
-  max-width: 900px;
+  /* width: 900px; */
   display: grid;
   margin-top: 32px;
   box-sizing: border-box;
+  /* grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); */
+  grid-template-columns: repeat(3, 240px);
   grid-gap: 24px;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  justify-items: center;
   justify-content: center;
 }
 .card{
-  display: grid;
-  justify-items: center;
+  /* display: grid;
+  justify-items: center; */
   background-color: var(--jet);
   /* opacity: 80%; */
   width: 240px;
@@ -149,7 +146,7 @@ margin-right: 0px;
   margin: 16px;
   padding: 4px 8px;
 }
-
+/*---------------------------------- -------------------------- section*/
 .parrafo{
   display: none;
   /* display: flex; */
@@ -188,5 +185,16 @@ margin-right: 0px;
     display: block;
     color: var(--jet);
     font-size: var(--md);
+  }
+}
+@media (max-width: 720px) {
+  .projects__img{
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
+}
+
+@media (max-width: 900px){
+  .projects__img{
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   }
 }
