@@ -193,16 +193,20 @@ margin-right: 0px;
 }
 .language{
   display: flex;
-  align-content: center;
+  justify-content: center;
+  /* box-sizing: border-box; */
+  width: 900px;
 }
 .lang{
-  display: inline-block;
+  display: flex;
+  align-items: center;
   background-color: var(--brunswick-green);
-  width: 100px;
+  width: 200px;
   height: 200px;
   padding: 16px;
-
+  object-fit: contain;
 }
+
 
 @media (max-width:640px){
   .menu__hamburguer{
